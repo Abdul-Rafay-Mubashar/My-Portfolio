@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/My-Portfolio/static/css/main.dcfe66a3.css",
+    "main.js": "/My-Portfolio/static/js/main.c91bb793.js",
+    "static/js/787.5d7cc3df.chunk.js": "/My-Portfolio/static/js/787.5d7cc3df.chunk.js",
+    "static/media/Nike.png": "/My-Portfolio/static/media/Nike.0edbf3a9c422440da402.png",
+    "static/media/Inventory System Database.png": "/My-Portfolio/static/media/Inventory System Database.5eb5c388ab518663a1c9.png",
+    "static/media/Movie.png": "/My-Portfolio/static/media/Movie.0888a5bc29fc8c8cd6e3.png",
+    "static/media/Olx.png": "/My-Portfolio/static/media/Olx.1ead24ddf33861f7d018.png",
+    "static/media/Pic.png": "/My-Portfolio/static/media/Pic.9fa15c8b8e94dbe7d0df.png",
+    "static/media/GitHub.png": "/My-Portfolio/static/media/GitHub.f2acbde6cbfda4fcea3d.png",
+    "static/media/ChatApp Pic.png": "/My-Portfolio/static/media/ChatApp Pic.3a0977e6e32215d87863.png",
+    "static/media/Stat.png": "/My-Portfolio/static/media/Stat.9540e9d3100ab83dfe1c.png",
+    "index.html": "/My-Portfolio/index.html",
+    "main.dcfe66a3.css.map": "/My-Portfolio/static/css/main.dcfe66a3.css.map",
+    "main.c91bb793.js.map": "/My-Portfolio/static/js/main.c91bb793.js.map",
+    "787.5d7cc3df.chunk.js.map": "/My-Portfolio/static/js/787.5d7cc3df.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dcfe66a3.css",
+    "static/js/main.c91bb793.js"
+  ]
+}
