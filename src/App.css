@@ -1,38 +1,1438 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Header_Outline{
+  width: 100%;
+  height: 13vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #020102;
+  position: fixed;
+  z-index: 3;
+}
+.NavBar_Botton{
+  width: 50px;
+  height: 100%;
+  background-color: #FB1E4F;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: none;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.Mobile_MenuBar_Main{
+  width: 100vw;
+  height: 98vh;
+  background-color: #272627;
+  position: fixed;
+  z-index: 4;
+  display: none;
+}
+.Mobile_MenuBar{
+  padding-top: 2vh;
+  width: 0vw;
+  height: 98vh;
+  background-color: #FB1E4F;
+  position: fixed;
+  z-index: 4;
+  transition-property: width;
+  transition-duration: 0.5s;
+  /* display: none; */
+}
+.Mobile_MenuBar_Option{
+  text-decoration: none;
+  width: 95%;
+  height: 50px;
+  border-top: solid 1px #272627;
+  border-bottom: solid 1px #272627;
+  padding-left: 5%;
+  /* display: flex; */
+  align-items: center;
+  color: #020102;
+  font-weight: 600;
+  transition-property: all;
+  transition-duration: 1s;
+  display: none;
+}
+.Mobile_MenuBar_Option:hover{
+  background-color: #020102;
+  width: 95%;
+  height: 50px;
+  border-top: solid 1px #272627;
+  border-bottom: solid 1px #272627;
+  padding-left: 5%;
+  display: flex;
+  align-items: center;
+  color: #FB1E4F;
+  font-weight: 600;
+}
+.NavBar_Botton:hover{
+  width: 50px;
+  height: 100%;
+  background-color: #272627;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+
+}
+.NavBar_Button_Pic{
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+.Header_Outline1{
+  width: 100%;
+  height: 13vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #020102;
+  /* position: absolute; */
+}
+.Header_Logo{
+  width: 30%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.Header_Option_Section{
+  width: 60%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.Logo_Capital{
+  font-size: 40px;
+  font-weight: 700;
+  color: #FB1E4F;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Logo_Small{
+  font-size: 40px;
+  font-weight: 700;
+  color: #FFFDFF;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+}
+.Header_Option_Inside{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.Header_Options_Bar{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+}
+.Option_Box{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #8E8B8B;
+  font-weight: 600;
   flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+.Option_Box_underline{
+  width: 0%;
+  height: 5px;
+  background-color: #FB1E4F;
+  border-radius: 100px;
+  transition-property: width;
+  transition-duration: 1.2s;
+}
+.My_Pic_Outline{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #020102;
+  /* margin-top: 12px; */
+}
+.My_Pic_Outline_Half{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-width: 350px;
+}
+.Pic_Frame{
+  width: 100%;
+  height: 100%;
+}
+.My_Pic {
+  width: 100%;
+  height: 100%;
+  background-image: url('Pic.png'); 
+  background-size: cover;
+}
+.About_Outline{
+  width: 100%;
+  height: 100vh;
+
+  background-color: #020102;
+}
+.About_My_Self{
+  width: 50%;
+  background-color: #020102;
+  height: 100%;
+  display: flex;
+  /* justify-content: flex-start; */
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  z-index: 2;
+  position: relative;
+}
+body {
+  background-color: #020102;
+}
+.About_My_Self_Box{
+  width: 70%;
+  height: 60%;
+  margin-left: -4vw;
+  min-width: 220px;
+}
+.Profession_Type{
+  width: 100%;
+  height: 17%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #8E8B8B;
+  font-weight: 500;
+  min-width: 244px;
+}
+.Profession_Type:hover{
+  font-size: 30px;
+}
+.My_Intro{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.My_Intro_Box1{
+  font-size: 36px;
+  font-weight: 800;
+  color: #FFFDFF;
+  display: flex;
+}
+.My_Intro_Box1a{
+  font-size: 36px;
+  font-weight: 800;
+  color: #FFFDFF;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: 
+    typing 2s steps(7),
+    cursor 4s step-end infinite alternate;
+}
+.My_Intro_Box3{
+  font-size: 36px;
+  font-weight: 800;
+  color: #FFFDFF;
+  display: flex;
+}
+.My_Intro_Box3a{
+  font-size: 36px;
+  font-weight: 800;
+  color: #FFFDFF;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: 
+    typing 2s steps(12),
+    cursor 4s step-end infinite alternate;
+}
+.My_Intro_Box1a:hover{
+  font-size: 40px;
+}
+.My_Intro_Box3a:hover{
+  font-size: 40px;
+}
+.My_Intro_Box2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #FB1E4F;
+  display: flex;
+  align-items: center;
+}
+
+.My_Intro_Box2a {
+  font-size: 36px;
+  font-weight: 800;
+  color: #FB1E4F;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.phase-1 {
+  animation: typing 2s steps(11);
+  animation-fill-mode: both;
+}
+
+.phase-2 {
+  animation: typing 2s steps(11) 2s, cursor 4s step-end infinite alternate;
+  animation-fill-mode: both;
+}
+
+.phase-3 {
+  animation: typing 2s steps(11) 6s;
+  animation-fill-mode: both;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 100%;
+  }
+  60% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+.For_Space{
+  width: 3%;
+}
+.AboutMe_Outline{
+  width: 100%;
+  height: 100vh;
+  background-color:#090809;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+}
+.AboutMe_Outline_Part1{
+  width: 30%;
+  height: 100%;
+  /* display: flex;
+  align-items: center; */
+}
+.AboutMe_Outline_Part2{
+  width: 70%;
+  height: 100%;
+}
+.AboutMe_Pic_Faram{
+  width: 80%;
+  height: 70%;
+  background-color: #272627;
+  margin-left: 4vw;
+  border-radius: 20px;
+  margin-top: 10vh;
+  background-image: url('Pic.png'); 
+  background-size: cover;
+  /* object-fit: cover; */
+  min-width: 310px;
+  max-width: 550px;
+
+}
+.AboutMe_Description_Container{
+  width: 80%;
+  height: 70%;
+  border-radius: 20px;
+  margin-top: 10vh;
+}
+.AboutMe_Description_Container_Heading{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.About_Description{
+  width: 100%;
+  height: 20%;
+  font-weight: 500;
+  color: #737273;
+}
+.AboutMe_Option_Bar{
+  width: 100%;
+  height: 7%;
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: row;
+}
+.About_Option_Box{
+  width: 20%;
+  height: 100%;
+  color: #767577;
+  font-weight: 500;
+  cursor: pointer;
+  min-width: 130px;
+}
+.AboutMe_Option_Box_underline1{
+  width: 55%;
+  background-color: #FB1E4F;
+  border-radius: 10px;
+  height: 5px;
+  transition-property: width;
+  transition-duration: 1.2s;
+}
+.AboutMe_Option_Box_underline2{
+  width: 0%;
+  background-color: #FB1E4F;
+  border-radius: 10px;
+  height: 5px;
+  transition-property: width;
+  transition-duration: 1.2s;
+}
+.Education_And_Experience_Box{
+  width: 100%;
+  height: 45%;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.Education_Box{
+  width: 50%;
+  height: 100%;
+  min-width: 310px;
+}
+.Experience_Box{
+  width: 50%;
+  height: 100%;
+  display: none;
+  opacity: 0;
+  min-width: 310px;
+
+  /* transition-property: opacity;
+  transition-duration: 1.2s; */
+}
+.Education_Heading{
+  width: 100%;
+  height: 10%;
+  color: #FB1E4F;
+  font-weight: 500;
+
+}
+.Education_Discription{
+  width: 100%;
+  height: 10%;
+  color:#737273;
+  font-weight: 400;
+}
+.Education_Period{
+  width: 100%;
+  height: 10%;
+  color:#737273;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.Skill_Outline{
+  width: 100%;
+  height: 75vh;
+  background-color:#090809;
+  position: relative;
+  z-index: 2;
+  /* height: auto; */
+  overflow: hidden;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.Skill_Heading{
+  width: 70%;
+  height: 20vh;
+  /* background-color: #FB1E4F; */
+  padding-left: 4vw;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 700;
   color: white;
 }
+.Skill_Bar{
+  width: 100%;
+  min-height: 50vh;
+  height: auto;
+  flex-wrap: nowrap;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.Skill_Bar_Half{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  min-height: 100%;
+  height: auto;
+  align-items: flex-end;
+}
+.Skill_Box{
+  width: 20vw;
+  height: 45vh;
+  background-color: #272627;
+  /* background-color: darkred; */
+  border-radius: 20px;
+  margin-left: 4vw;
+  min-width: 280px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.Skill_Box1{
+  width: 20vw;
+  height: 45vh;
+  /* background-color: darkred; */
+  border-radius: 20px;
+  display: none;
+}
+.Skill_Box_Pic{
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  border-radius: 10px;
+  background-image: url(ChatApp\ Pic.png);
+  background-size: cover;
+  cursor: pointer;
+}
+.Skill_Box_Pic1{
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  border-radius: 10px;
+  background-image: url(Inventory\ System\ Database.png);
+  background-size: cover;
+  cursor: pointer;
 
-.App-link {
-  color: #61dafb;
+}
+.Skill_Box_Pic2{
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  border-radius: 10px;
+  background-image: url(Stat.png);
+  background-size: cover;
+  cursor: pointer;
+
+}
+.Skill_Box_Pic3{
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  border-radius: 10px;
+  background-image: url(GitHub.png);
+  background-size: cover;
+  cursor: pointer;
+
+}
+.Skill_Box_Pic4{
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  border-radius: 10px;
+  background-image: url(Movie.png);
+  background-size: cover;
+  cursor: pointer;
+
+}
+.Skill_Box_Pic5{
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  border-radius: 10px;
+  background-image: url(Nike.png);
+  background-size: cover;
+  cursor: pointer;
+
+}
+.Skill_Box_Pic6{
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  border-radius: 10px;
+  background-image: url(Olx.png);
+  background-size: cover;
+  cursor: pointer;
+
+}
+.Skill_Box_Pic:hover{
+  margin-top: -20px;
+  transition-property: margin;
+  transition-duration: 0.5s;
+}
+.Skill_Box_Pic1:hover{
+  margin-top: -20px;
+  transition-property: margin;
+  transition-duration: 0.5s;
+}
+.Skill_Box_Pic2:hover{
+  margin-top: -20px;
+  transition-property: margin;
+  transition-duration: 0.5s;
+}
+.Skill_Box_Pic3:hover{
+  margin-top: -20px;
+  transition-property: margin;
+  transition-duration: 0.5s;
+}
+.Skill_Box_Pic4:hover{
+  margin-top: -20px;
+  transition-property: margin;
+  transition-duration: 0.5s;
+}
+.Skill_Box_Pic5:hover{
+  margin-top: -20px;
+  transition-property: margin;
+  transition-duration: 0.5s;
+}
+.Skill_Box_Pic6:hover{
+  margin-top: -20px;
+  transition-property: margin;
+  transition-duration: 0.5s;
+}
+.Skill_Box_Proper_Pic{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width:1300px) {
+  .AboutMe_Outline{
+    flex-direction: column;
+    height: 200vh;
+  }
+  .AboutMe_Description_Container{
+    min-height: 550px;
+  }
+  .AboutMe_Outline_Part2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+  }
+  .AboutMe_Outline_Part1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+  }
+  .AboutMe_Description_Container{
+    margin-top: 0px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width:900px) {
+  .Profession_Type{
+    font-size: 18px;
   }
-  to {
-    transform: rotate(360deg);
+  .My_Intro_Box1a{
+    font-size: 28px;
+  }
+  .My_Intro_Box2a{
+    font-size: 28px;
+  }
+  .My_Intro_Box3a{
+    font-size: 28px;
+  }
+  .About_My_Self_Box{
+    /* min-height: 450px;
+    flex-wrap: nowrap; */
+    justify-content: flex-end;
+  }
+  .ContactMe_Outline{
+    height: auto;
+    background-color: yellow;
+    /* flex-direction: column; */
+  }
+  .ContactMe_Inside{
+    flex-direction: column;
+    /* background-color: purple; */
+  } 
+  .About_Description{
+    margin-bottom: 20px;
+    height: auto;
+  }
+  .Skill_Bar_Half{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .Skill_Bar{
+    flex-direction: column;
+  }
+  .Skill_Box{
+    width: 40vw;
+    margin: auto;
+    
+  }
+
+}
+@media screen and (max-width:775px) {
+  .My_Intro_Box1a{
+    font-size: 22px;
+  }
+  .My_Intro_Box2a{
+    font-size: 22px;
+  }
+  .My_Intro_Box3a{
+    font-size: 22px;
+  }
+  .About_My_Self{
+    background-color: transparent;
+    align-items: flex-end;
+    margin-top: -100px;
+  }
+  .About_My_Self_Box{
+    height: 250px;
+  }
+}
+@media screen and (max-width:600px) {
+
+  .About_My_Self{
+    justify-content: flex-end;
+    margin-left: 4vw;
+  }
+  .About_My_Self_Box{
+    /* background-color: #090809; */
+    /* margin-right: vw; */
+  }
+  .Skill_Bar_Half{
+    margin-bottom: 0px;
+    width: 100%;
+    flex-direction: column;
+    height: 120vh;
+  }
+  .About_Description{
+    margin-bottom: 40px;
+  }
+  .NavBar_Botton{
+    display: block;
+  }
+  .Header_Option_Inside{
+    display: none;
+  }
+}
+@media screen and (max-width:400px) {
+  /* .NavBar_Botton{
+    background-color: purple;
+    display: block;
+  } */
+  .About_My_Self{
+    justify-content: flex-end;
+    margin-left: 10vw;
+  }
+  .AboutMe_Pic_Faram{
+    width: 330px;
+  }
+}
+.See_More{
+  position: relative;
+  z-index: 2;
+}
+.Skill_Box_Inside{
+  width: 80%;
+  height: 80%;
+}
+.Skill_Logo_Containar{
+  width: 100%;
+  height: 25%;
+  margin-bottom: 10px;
+}
+.Skill_Heading_Container{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  color: #FFFDFF;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+.Skill_Description_Container{
+  width: 100%;
+  height: 40%;
+  font-size: 15px;
+  text-align: center;
+  color: #A19EA0;
+  font-weight: 400;
+}
+.Skill_Box:hover{
+  margin-bottom: 20px;
+  background-color: #FF1C4F;
+}
+.Skill_Logo{
+  width: 25%;
+  height: 100%;
+  /* background-color: yellow; */
+  /* background-image: url(Html.png); */
+  object-fit: cover;
+}
+.Skill_Logo1{
+  width: 40%;
+  height: 100%;
+  /* background-color: yellow; */
+  /* background-image: url(Html.png); */
+  object-fit: cover;
+}
+.SeeMore_OutLine{
+  width: 100%;
+  height: 10vh;
+  background-color:#090809;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SeeMore_Button{
+  background-color:#090809;
+  cursor: pointer;
+  width: 125px;
+  height: 50px;
+  border: solid 2px #FB1E4F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #FFFDFF;
+  font-size: 16px;
+  font-weight: 400;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.SeeMore_Button1{
+  background-color:#FB1E4F;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  border: solid 2px #090809;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #FFFDFF;
+  font-size: 16px;
+  font-weight: 400;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.SeeMore_Button1:hover{
+  background-color:#090809;
+  border: solid 2px #FB1E4F;
+}
+.SeeMore_Button:hover{
+  background-color:#FF1C4F;
+  border: solid 2px #FB1E4F;
+}
+.RollBack_Button{
+  background-color:#090809;
+  cursor: pointer;
+  width: 125px;
+  height: 50px;
+  border: solid 2px #FB1E4F;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #FFFDFF;
+  font-size: 16px;
+  font-weight: 400;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.RollBack_Button:hover{
+  background-color:#FF1C4F;
+  border: solid 2px #FB1E4F;
+}
+.Project_Outline{
+  width: 100%;
+  height: 100vh;
+  background-color:#090809;
+  position: relative;
+  z-index: 2;
+}
+.Project_Bar{
+  width: 100%;
+  min-height: 50vh;
+  background-color: yellow;
+  height: auto;
+  flex-wrap: nowrap;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.Project_Box{
+  width: 40vw;
+  height: 45vh;
+  /* background-color: #272627; */
+  background-color: darkred;
+  border-radius: 20px;
+  margin-left: 4vw;
+  min-width: 280px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.ContactMe_Outline{
+  width: 100%;
+  height: 90vh;
+  background-color:#090809;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.ContactMe_Inside{
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 4vw;
+}
+.ContactMe_Part1{
+  width: 30%;
+  height: 100%;
+}
+.ContactMe_Part2{
+  width: 70%;
+  height: 100%;
+}
+.Search_Bar{
+  width: 100%;
+  height: 17%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ContactMe_Heading{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+}
+.Email_Container{
+  width: 100%;
+  height: 14%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.Email_Logo{
+  width: 8%;
+  height: 100%;
+  margin-right: 10px;
+  background-color: #FF1C4F;
+
+}
+.Email{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  color: #8E8B8B;
+  font-weight: 500;
+}
+.ContactMe_Part1_Half1{
+  width: 100%;
+  height: 50%;
+}
+.ContactMe_Part1_Half2{
+  width: 100%;
+  height: 50%;
+}
+.Logo_Bar{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10vh;
+}
+
+.Logo:hover{
+  width: 50px;
+  height: 120%;
+  cursor: pointer;
+}
+.Button_Bar{
+  width: 100%;
+  height: 30%;
+}
+.CV_Downloder{
+  width: 135px;
+  height: 45px;
+  border: none;
+  color: #FFFDFF;
+  border-radius: 10px;
+  color: #FFFDFF;
+  font-size: 16px;
+  font-weight: 600;  
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.CV_Downloder:hover{
+  border: solid #090809 2px;
+}
+.Logo_Pic{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Search{
+  width: 90%;
+  height: 50%;
+  background-color: #272627;
+  border-radius: 10px;
+  font-size: 16px;
+  padding-left: 3%;
+  color: #FFFDFF;
+  border: none;
+}
+.Message_Text{
+  width: 100%;
+  height: 57%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Textarea_Msg{
+  width: 90%;
+  height: 80%;
+  background-color: #272627;
+  border-radius: 10px;
+  font-size: 16px;
+  padding-left: 3%;
+  color: #FFFDFF;
+  border: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+.Email_Logo_Pic{
+  width: 100%;
+  height: 100%;
+}
+.ContactUs_Outline{
+  width: 100%;
+  height: auto;
+  min-height: 86vh;
+  background-color: #090809;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+}
+.ContactUs_Container{
+  width: 90%;
+  height: 70vh;
+  margin-left: 4vw;
+  display: flex;
+  flex-direction: row;
+}
+.ContactUs_Container_Part1{
+  width: 30%;
+  height: 100%;
+  margin-right: 5%;
+}
+.ContactUs_Container_Part2{
+  width: 65%;
+  height: 100%;
+}
+.Email_Bar{
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.Email_Pic{
+  width: 30px;
+  height: 100%;
+  background-color: #090809;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Email_Content{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #8E8B8B;
+  font-weight: 500;
+}
+.Email{
+  background-color: #FB1E4F;
+  object-fit: cover;
+}
+.SocialMedia_Container{
+  width: 100%;
+  height: 9%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+}
+.Logo_Shape{
+  width: 40px;
+  height: 40px;
+  background-color: #737273;
+  border-radius: 25px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  overflow: hidden;
+}
+.Logos{
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 1.5s;
+}
+.Logos:hover{
+  background-color: #FF1C4F;
+}
+.DownLoad_CV_Outline{
+  width: 100%;
+  height: 12%;
+  margin-top: 25px;
+}
+.Name_Outline{
+  width: 100%;
+  height: 10%;
+  margin-top: 2vh;
+  display: flex;
+  align-items: flex-end;
+  /* flex-direction: column; */
+}
+.Name_Input{
+  width: 90%;
+  height: 90%;
+  background-color: #272627;
+  border: none;
+  font-size: 18px;
+  color: white;
+  padding-left: 10px;
+  border-radius: 7px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+.Msg_Input{
+  width: 90%;
+  height: 100%;
+  background-color: #272627;
+  border: none;
+  font-size: 18px;
+  color: white;
+  padding-left: 10px;
+  border-radius: 7px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.Email_Outline{
+  width: 100%;
+  height: 10%;
+  margin-top: 5vh;
+  display: flex;
+  align-items: flex-end;
+}
+.Msg_Outline{
+  width: 100%;
+  height: 40%;
+  margin-top: 5vh;
+  display: flex;
+  align-items: flex-end;
+}
+.Submit_OutLine{
+  height: 8vh;
+  width: 100%;
+  margin-top: 40px;
+  background-color: #090809;
+}
+@media screen and (max-width:800px) {
+
+  .ContactUs_Container{
+    flex-direction: column;
+    height: 140vh;
+
+  }
+  .ContactUs_Outline{
+    height: 170vh;
+
+  }
+  .ContactUs_Container_Part1{
+    height: 70%;
+    width: 100%;
+  }
+  .ContactUs_Container_Part2{
+    width: 100%;
+  } 
+  .Name_Input{
+    width: 100%;
+  }
+  .Msg_Input{
+    width: 100%;
+  }
+
+}
+.RedError_OutLine{
+  width: 100%;
+  height: 50px;
+  position:relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -100px;
+  transition-property: all;
+  transition-duration: 2s;
+  opacity: 0;
+}
+.RedError_OutLine1{
+  width: 90%;
+  height: 50px;
+  background-color: #FCEBDA;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+p{
+  color: blue;
+}
+.GreenError_OutLine{
+  width: 100%;
+  height: 50px;
+  position:absolute;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: -100px; */
+  transition-property: all;
+  transition-duration: 2s;
+  opacity: 0;
+}
+.GreenError_OutLine1{
+  width: 90%;
+  height: 50px;
+  background-color: #A6D785;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.RedError_OutLine_Part1{
+  width: 75%;
+  height: 100%;
+  font-weight: 700;
+  background-color: #A6D785;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.RedError_OutLine_Part2{
+  width: 10%;
+  height: 100%;
+  /* background-color: purple; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #A6D785;
+}
+.RedError_OutLine_Part11{
+  width: 75%;
+  height: 100%;
+  font-weight: 700;
+  background-color: #FCEBDA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.RedError_OutLine_Part21{
+  width: 10%;
+  height: 100%;
+  /* background-color: purple; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #FCEBDA;
+
+}
+.Cross_Error_Outline{
+  width: 25px;
+  height: 40%;
+  /* background-color: aliceblue; */
+  cursor: pointer;
+  background-color: #A6D785;
+  border: none;
+
+}
+.Cross_Error_Outline_For_Green{
+  width: 25px;
+  height: 40%;
+  /* background-color: aliceblue; */
+  cursor: pointer;
+  background-color: #FCEBDA;
+  border: none;
+}
+.Cross_Error_Outline_Pic{
+  width: 100%;
+  height: 100%;
+}
+
+.Green_Notification_Outline{
+  width: 100%;
+  height: 50px;
+  /* background-color: #A6D785; */
+  position: absolute;
+  z-index: 4;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.Mobile_MenuBar_Back{
+  width: 100vw;
+  height: ;
+}
+.Green_Notification_Outline_Inside{
+  width: 86%;
+  height: 50px;
+  background-color: #A6D785;
+  padding-left: 3%;
+  padding-right: 1%;
+  display: flex;
+  transition-property:opacity;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+.Red_Notification_Outline_Inside{
+  width: 86%;
+  height: 50px;
+  background-color: #FCEBDA;
+  padding-left: 3%;
+  padding-right: 1%;
+  display: flex;
+  transition-property:opacity;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+.Green_Notification_Outline_Inside_Part1{
+  width: 60%;
+  height: 100%;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.Green_Notification_Outline_Inside_Part2{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.Green_Notification_Cross{
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Cross_Box{
+  width: 30%;
+  height: 30%;
+}
+.Cross_Img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width:800px) {
+  .AboutMe_Pic_Faram{
+    margin-left: 0px;
+  }
+  .AboutMe_Outline_Part1
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .RedError_OutLine{
+    margin-top: 610px;
+  }
+  .GreenError_OutLine{
+    /* margin-top: 610px; */
+  }
+  .Green_Notification_Outline{
+    margin-top: 580px;
+    /* position: fixed; */
+  }
+}
+@media screen and (max-width:450px) {
+  .About_My_Self_Box{
+    margin-right: -4vw;
+  }
+}
+@media screen and (max-width:360px) {
+  .About_My_Self_Box{
+    margin-right: -8vw;
+  }
+  .My_Pic_Outline_Half{
+    max-width: 320px;
+  }
+
+}
+@media screen and (max-width:330px) {
+  .AboutMe_Outline{
+    width: 107vw;
+  }
+  .Skill_Outline{
+    width: 107vw;
+  }
+  .ContactUs_Outline{
+    width: 107vw;
+  }
+  .SeeMore_OutLine{
+    width: 107vw;
+  }
+}
+@media screen and (max-width:330px) {
+  body{
+    overflow-x: hidden;
+  }
+
+  .About_My_Self_Box{
+    margin-right: -12vw;
   }
 }
