@@ -31,7 +31,7 @@ export default function About() {
           <div className='My_Intro'>
             <div className='My_Intro_Box1'>
               <div className='My_Intro_Box1a'>
-                Hi, I`ms
+                Hi, I`m
               </div>
             </div>
             <div className='For_Space'></div>
