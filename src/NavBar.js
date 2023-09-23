@@ -1,9 +1,7 @@
 import React from 'react'
 
 export default function NavBar() {
-    function to_reload(){
-        window.location.reload()
-    }
+
     var option_array = [{ name: 'Home', id: 'Portfolio' }, { name: 'About', id: 'AboutMe' }, { name: 'Skills', id: 'Skills' }, { name: 'Project', id: 'Projects' }, { name: 'Contact', id: 'ContactMe' }]
     function LineOff(index) {
         document.getElementsByClassName('Option_Box_underline')[index].style.width = '0%'
@@ -43,10 +41,10 @@ export default function NavBar() {
         <>
             <div className='Header_Outline'>
                 <div className='Header_Logo' >
-                    <a href='https://abdul-rafay-mubashar.github.io/My-Portfolio/' className='Logo_Capital'onClick={to_reload}>
+                    <a href='https://abdul-rafay-mubashar.github.io/My-Portfolio/' className='Logo_Capital'>
                         R
                     </a>
-                    <a href='https://abdul-rafay-mubashar.github.io/My-Portfolio/' className='Logo_Small'onClick={to_reload}>
+                    <a href='https://abdul-rafay-mubashar.github.io/My-Portfolio/' className='Logo_Small'>
                         afay
                     </a>
                 </div>
