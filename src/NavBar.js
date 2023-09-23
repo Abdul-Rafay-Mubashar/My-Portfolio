@@ -43,12 +43,12 @@ export default function NavBar() {
         <>
             <div className='Header_Outline'>
                 <div className='Header_Logo' >
-                    <div className='Logo_Capital'onClick={to_reload}>
+                    <a href='https://abdul-rafay-mubashar.github.io/My-Portfolio/' className='Logo_Capital'onClick={to_reload}>
                         R
-                    </div>
-                    <div className='Logo_Small'onClick={to_reload}>
+                    </a>
+                    <a href='https://abdul-rafay-mubashar.github.io/My-Portfolio/' className='Logo_Small'onClick={to_reload}>
                         afay
-                    </div>
+                    </a>
                 </div>
                 <div className='Header_Option_Section'>
                     <button className='NavBar_Botton' onClick={NaveBar_Button_Function}>
