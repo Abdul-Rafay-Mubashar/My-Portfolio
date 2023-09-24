@@ -92,7 +92,7 @@ export default function AboutMe() {
                                 2018-2020
                             </div>
                             <div className='Education_Heading'>
-                                Metric
+                                Matric
                             </div>
                             <div className='Education_Discription'>
                                 Cathedral High School
