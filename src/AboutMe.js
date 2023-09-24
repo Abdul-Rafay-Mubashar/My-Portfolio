@@ -48,7 +48,7 @@ export default function AboutMe() {
             <div className='AboutMe_Outline_Part2'>
                 <div className='AboutMe_Description_Container'>
                     <div className='AboutMe_Description_Container_Heading'>
-                        About Me Helllo
+                        About Me
                     </div>
                     <div className='About_Description'>
                         I am an enthusiastic, self-motivated, reliable,
