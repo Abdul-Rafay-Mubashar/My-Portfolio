@@ -80,7 +80,7 @@ export default function AboutMe() {
                                 University Of Management And Technology
                             </div>
                             <div className='Education_Period'>
-                                2021-ongoing
+
                             </div>
                             <div className='Education_Heading'>
                                 Intermediate
@@ -89,7 +89,7 @@ export default function AboutMe() {
                                 Forman Christian College
                             </div>
                             <div className='Education_Period'>
-                                2018-2020
+
                             </div>
                             <div className='Education_Heading'>
                                 Metric
@@ -98,7 +98,7 @@ export default function AboutMe() {
                                 Cathedral High School
                             </div>
                             <div className='Education_Period'>
-                                2016-2018
+
                             </div>
                         </div>
                         <div className='Experience_Box'>
@@ -106,7 +106,7 @@ export default function AboutMe() {
                                 Mern Web Developer
                             </div>
                             <div className='Education_Discription'>
-                                3 Months Of Experience
+                                6 Months Of Experience
                             </div>
                             <div className='Education_Period'>
                                 
@@ -115,7 +115,7 @@ export default function AboutMe() {
                                 React Front End Web Developer
                             </div>
                             <div className='Education_Discription'>
-                                3 Months Of Experience
+                                1 Year Of Experience
                             </div>
                             <div className='Education_Period'>
 
@@ -124,7 +124,7 @@ export default function AboutMe() {
                                 C++ Programmer
                             </div>
                             <div className='Education_Discription'>
-                                1.5 Years Of Experience
+                                2.5 Years Of Experience
                             </div>
                             <div className='Education_Period'>
                                 
