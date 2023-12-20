@@ -92,7 +92,7 @@ export default function AboutMe() {
 
                             </div>
                             <div className='Education_Heading'>
-                                Metric
+                                Matric
                             </div>
                             <div className='Education_Discription'>
                                 Cathedral High School

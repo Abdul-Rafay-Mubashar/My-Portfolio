@@ -233,7 +233,7 @@ export default function ContactUs() {
                             </div>
                         </div>
                         <div className='SocialMedia_Container'>
-                            <a className='Logo_Shape' href='https://www.linkedin.com/in/abdul-rafay-46a749269/'>
+                            <a className='Logo_Shape' href='https://www.linkedin.com/in/abdul-rafay-mubashar-46a749269'>
                                 <img src='https://cdn-icons-png.flaticon.com/512/61/61109.png' alt='Pic' className='Logos'></img>
                             </a>
                             <a className='Logo_Shape' href='https://github.com/Abdul-Rafay-Mubashar'>

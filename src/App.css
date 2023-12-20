@@ -106,11 +106,13 @@
   font-weight: 700;
   color: #FB1E4F;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
 }
 .Logo_Small{
   font-size: 40px;
   font-weight: 700;
   color: #FFFDFF;
+  text-decoration: none;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-style: italic;
 }
