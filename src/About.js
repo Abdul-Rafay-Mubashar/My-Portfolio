@@ -26,7 +26,7 @@ export default function About() {
       <div className='About_My_Self'>
         <div className='About_My_Self_Box'>
           <div className='Profession_Type'>
-              Mern Web Developer
+              Data Scraper & Mern Web Developer
           </div>
           <div className='My_Intro'>
             <div className='My_Intro_Box1'>

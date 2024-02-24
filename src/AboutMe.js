@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function AboutMe() {
     function Experience() {
-        document.getElementsByClassName('AboutMe_Option_Box_underline2')[0].style.width = '55%'
-        document.getElementsByClassName('AboutMe_Option_Box_underline1')[0].style.width = '0%'
+        document.getElementsByClassName('AboutMe_Option_Box_underline2')[0].style.width = '0%'
+        document.getElementsByClassName('AboutMe_Option_Box_underline1')[0].style.width = '55%'
         document.getElementsByClassName('Education_Box')[0].style.display='none'
         document.getElementsByClassName('Experience_Box')[0].style.display='block'
         var i=0.1;
@@ -19,8 +19,8 @@ export default function AboutMe() {
         document.getElementsByClassName('Education_Box')[0].style.opacity='0'
     }
     function Education() {
-        document.getElementsByClassName('AboutMe_Option_Box_underline2')[0].style.width = '0%'
-        document.getElementsByClassName('AboutMe_Option_Box_underline1')[0].style.width = '55%'
+        document.getElementsByClassName('AboutMe_Option_Box_underline2')[0].style.width = '55%'
+        document.getElementsByClassName('AboutMe_Option_Box_underline1')[0].style.width = '0%'
         document.getElementsByClassName('Experience_Box')[0].style.display='none'
         document.getElementsByClassName('Education_Box')[0].style.display='block'
         // document.getElementsByClassName('Education_Box')[0].style.opacity='1'
@@ -58,14 +58,14 @@ export default function AboutMe() {
                         environment as well as using own initiative
                     </div>
                     <div className='AboutMe_Option_Bar'>
-                        <div className='About_Option_Box' onClick={Education} >
-                            Education
+                        <div className='About_Option_Box' onClick={Experience} >
+                            Experience
                             <div className='AboutMe_Option_Box_underline1'>
 
                             </div>
                         </div>
-                        <div className='About_Option_Box' onClick={Experience} >
-                            Experience
+                        <div className='About_Option_Box' onClick={Education} >
+                            Education
                             <div className='AboutMe_Option_Box_underline2'>
 
                             </div>
@@ -102,7 +102,16 @@ export default function AboutMe() {
                             </div>
                         </div>
                         <div className='Experience_Box'>
-                        <div className='Education_Heading'>
+                            <div className='Education_Heading'>
+                                Data Scraper At ValenTech LLC 
+                            </div>
+                            <div className='Education_Discription'>
+                                3 Months Of Experience
+                            </div>
+                            <div className='Education_Period'>
+                                
+                            </div>
+                            <div className='Education_Heading'>
                                 Mern Web Developer
                             </div>
                             <div className='Education_Discription'>

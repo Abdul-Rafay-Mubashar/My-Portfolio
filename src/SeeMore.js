@@ -4,7 +4,7 @@ export default function SeeMore() {
     function Seemore() {
         document.getElementsByClassName('RollBack_Button')[0].style.display = 'flex'
         document.getElementsByClassName('SeeMore_Button')[0].style.display = 'none'
-        document.getElementsByClassName('Skill_Outline')[0].style.height = '173vh'
+        document.getElementsByClassName('Skill_Outline')[0].style.height = '234vh'
         setTimeout(() => {
             document.getElementsByClassName('Skill_Outline')[0].style.height = 'auto'
         }, 1200);

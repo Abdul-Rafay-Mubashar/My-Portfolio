@@ -9,17 +9,17 @@ export default function Skill() {
                 </div>
                 <div className='Skill_Bar'>
                     <div className='Skill_Bar_Half'>
-                        <div className='Skill_Box'>
+                    <div className='Skill_Box'>
                             <div className='Skill_Box_Inside'>
                                 <div className='Skill_Logo_Containar'>
-                                    <img src='https://seeklogo.com/images/C/c-logo-1B1817C041-seeklogo.com.png' className='Skill_Logo' alt='Pic'>
+                                    <img src='https://static.thenounproject.com/png/4998529-200.png' className='Skill_Logo1' alt='Pic'>
                                     </img>
                                 </div>
                                 <div className='Skill_Heading_Container'>
-                                    C++
+                                    Data Scraping
                                 </div>
                                 <div className='Skill_Description_Container'>
-                                    I Had Used C++ For 1.5 years And Make Almost 10 Project Console Projects And Desktop App With File Handling As A Backend
+                                    I Had Practice Data Scraping For 3 Months And Also Did Sucessful Projects With This As I Am Assosiate With VelenTech As Independent Contractor
                                 </div>
                             </div>
                         </div>
@@ -192,6 +192,25 @@ export default function Skill() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className='Skill_Bar_Single'>
+                    <div className='Skill_Bar_Half_Single'>
+                        <div className='Skill_Box'>
+                            <div className='Skill_Box_Inside'>
+                                <div className='Skill_Logo_Containar'>
+                                    <img src='https://seeklogo.com/images/C/c-logo-1B1817C041-seeklogo.com.png' className='Skill_Logo' alt='Pic'>
+                                    </img>
+                                </div>
+                                <div className='Skill_Heading_Container'>
+                                    C++
+                                </div>
+                                <div className='Skill_Description_Container'>
+                                    I Had Used C++ For 1.5 years And Make Almost 10 Project Console Projects And Desktop App With File Handling As A Backend
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
