@@ -37,7 +37,7 @@ export default function About() {
             <div className='For_Space'></div>
             <div className='My_Intro_Box2'>
               <div className='My_Intro_Box2a'>
-                Abdul Rafay
+                Abdul Rafay 1
               </div>
             </div>
           </div>
